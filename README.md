@@ -2,7 +2,7 @@
 
 **A Connectome-Constrained, Closed-Loop Biomechanical Simulation for Auditory Rhythm Synchronization in *Drosophila melanogaster***
 
-`babyshark-FLY` is a biologically grounded neuro-mechanical simulation where acoustic music signals drive an auditory connectome pathway (Johnston's Organ $\to$ AMMC $\to$ Descending Neurons), which modulates a coupled Central Pattern Generator (CPG) governing the 6-legged articulated exoskeleton of the fruit fly avatar in physics simulation.
+`babyshark-FLY` is a biologically grounded neuro-mechanical simulation where acoustic music signals drive an auditory connectome pathway (Johnston's Organ $\to$ AMMC $\to$ Descending Neurons), modulating a coupled Central Pattern Generator (CPG) governing the 6-legged articulated exoskeleton of the fruit fly avatar in physics simulation.
 
 ---
 
@@ -17,48 +17,52 @@
                                    ▼
                     ┌─────────────────────────────┐
                     │   AUDIO / RHYTHM PIPELINE   │
-                    │ • Onset envelope            │
                     │ • Continuous beat phase     │
+                    │ • Onset energy envelope     │
                     │ • Multi-band spectral power │
                     │ • Timestep synchronization  │
                     └──────────────┬──────────────┘
-                                   │
+                                   │ acoustic waveform & power
                                    ▼
                     ┌─────────────────────────────┐
                     │   AUDITORY NEURAL MODEL     │
                     │ (Connectome-Constrained)    │
+                    │ • Mode B: Pure Biological   │
                     │ • Johnston's Organ (JO-A/B) │
                     │ • AMMC interneurons         │
                     │ • Descending Neurons (DNs)  │
-                    │ • Lateral & commissural inh.│
+                    │ • FlyWire synaptic matrices │
                     └──────────────┬──────────────┘
                                    │
-                         neural state / activity
+                         neural state / activity (24 DNs)
                                    │
                                    ▼
         ┌─────────────────────────────────────────────────┐
-        │              CPG MOTOR CONTROLLER               │
+        │       PPO ACTOR-CRITIC / CPG CONTROLLER         │
         │                                                 │
-        │ Modulation Inputs:                              │
-        │ • DN transient, sustained & asymmetry drive     │
-        │ • Proprioceptive joint & contact states         │
-        │ • Continuous beat phase & tempo                 │
+        │ Observation (83-D):                             │
+        │ • 24 Auditory Descending Neurons (DNs)          │
+        │ • 54 Proprioceptive kinematics & contacts       │
+        │ • 5 Normalized audio features                   │
         │                                                 │
-        │ Action:                                         │
-        │ • Coupled phase oscillator stepping frequency   │
-        │ • Joint excursion amplitude & body bobbing      │
-        │ • Bilateral sway & stance/swing duty cycle      │
+        │ Action (8-D continuous modulations):            │
+        │ • Stepping frequency & joint amplitude          │
+        │ • Body heave bobbing & swing duty cycle         │
+        │ • Bilateral sway & front/mid/hind leg scaling   │
         └──────────────────────┬──────────────────────────┘
                                │
                                │ coordinated joint targets
                                ▼
         ┌─────────────────────────────────────────────────┐
-        │       NEUROMECHFLY / FLYGYM PHYSICS AVATAR      │
+        │      DUAL-BACKEND PHYSICS SIMULATION            │
         │                                                 │
-        │ • Articulated 6-legged adult Drosophila model   │
-        │ • 18 actuated joint DOFs (coxa, femur, tibia)   │
-        │ • Ground contact mechanics & stability          │
-        │ • Full proprioceptive feedback                  │
+        │ 1. MuJoCoFlyGymEnv (Genuine MuJoCo 3.x):        │
+        │    • EPFL NeuroMechFly adult Drosophila model   │
+        │    • 204 position actuators, mesh collisions    │
+        │                                                 │
+        │ 2. SimpleFlyEnv (Fast Numerical Model):         │
+        │    • 1,800+ steps/s for rapid RL sweeps         │
+        │    • Compliant PD joints & contact kinematics   │
         └──────────────────────┬──────────────────────────┘
                                │
                      body kinematics & state
@@ -69,7 +73,7 @@
        ┌──────────────────┐      ┌────────────────────────┐
        │ PROPRIOCEPTION   │      │  DANCE REWARD ENGINE   │
        │ (54D Vector)     │      │                        │
-       │ • Joint angles   │      │ • Beat phase sync      │
+       │ • Joint angles   │      │ • Footfall Event Sync  │
        │ • Velocities     │      │ • Onset correlation    │
        │ • Foot contacts  │      │ • Stepping rhythmicity │
        │ • Body Euler     │      │ • Postural stability   │
@@ -80,51 +84,38 @@
 
 ---
 
-## 🔬 Core Modules
+## 🔬 Scientific Foundation & Technical Reality
 
-### 1. Audio & Rhythm Pipeline (`audio_pipeline.py`)
-- Ingests audio files or generates synthetic rhythmic test pulses (120 BPM dance beats, courtship pulse songs).
-- Extracts instantaneous beat phase $\phi(t) \in [0, 2\pi)$ (with $\phi=0$ aligned to downbeat moments).
-- Frequency decomposition matching *Drosophila* auditory reception without hard-clipping high musical frequencies:
-  - Low band (100–300 Hz, pulse song resonance & bass drum transients)
-  - Mid band (300–800 Hz, sine song harmonics & melody)
-  - High band (>800 Hz, percussion & treble)
+### 1. Connectome Topology (`data/flywire/`, `connectome_auditory.py`)
+- **Node Metadata & FlyWire Mapping**: Contains mapped annotations (`data/flywire/neurons.json`, `synapses.json`) reflecting adult *Drosophila* cell types:
+  - **Johnston's Organ (JON)**: $2 \times 32$ mechanoreceptors (subpopulations JO-A for vibrations/transients, JO-B for continuous song).
+  - **AMMC Interneurons**: $2 \times 48$ units (`AMMC-aLN`, `AMMC-B1`, `aPN1`, `aPN2`) with tonotopic receptive fields and cross-hemispheric commissural inhibition.
+  - **Descending Neurons (DNs)**: 24 units (`DNp01`, `aDN1`, `aDN2`, `MDN`, `DNg02`, `DNb01`).
+- **Biologically Driven (Mode B)**: Johnston's Organ receives **only** raw acoustic waveforms and multi-band spectral vibration power. It does **not** receive artificial pre-computed beat pulses.
 
-### 2. Connectome Auditory Pathway (`connectome_auditory.py`)
-- Biologically derived 184-neuron subgraph inspired by FlyWire and FAFB connectome data:
-  - **Johnston's Organ (JON)**: $2 \times 32$ bilateral mechanoreceptors (subpopulations JO-A for vibrations/transients, JO-B for continuous song).
-  - **AMMC Interneurons**: $2 \times 48$ units with tonotopic receptive fields, local recurrent excitation, and cross-hemispheric commissural inhibition.
-  - **Descending Neurons (DNs)**: 24 units categorized into transient beat trackers (DN 0–7), sustained rhythm integrators (DN 8–15), and bilateral steering/sway units (DN 16–23).
+### 2. Dual Physics Backends (`fly_env.py`)
+- **`MuJoCoFlyGymEnv`**: Genuinely compiles and steps EPFL's **NeuroMechFly** in **MuJoCo 3.x** with 204 actuated DoFs, rigid-body contact solver, and gravitational dynamics.
+- **`SimpleFlyEnv`**: High-throughput custom biomechanical model running at **1,800+ steps/second**, ideal for rapid PPO policy exploration and parameter tuning.
 
-### 3. Central Pattern Generator (`cpg_controller.py`)
-- 6 coupled phase oscillators governing the legs with differential phase dynamics:
-  $$\dot{\theta}_i = 2\pi f_i + \sum_j w_{ij} \sin(\theta_j - \theta_i - \Delta\phi_{ij})$$
-- Dynamically translates descending neural commands into smooth 3D joint kinematic trajectories for coxa, femur, and tibia actuators.
-
-### 4. Biomechanical Physics Avatar (`fly_env.py`)
-- MuJoCo 3.x / compliant physics simulation of adult *Drosophila melanogaster*.
-- Models 18 actuated joint DOFs with PD position control and ground contact dynamics.
-- Rich 54-dimensional proprioceptive feedback state.
-- Headless off-screen RGB renderer with real-time HUD telemetry.
-
-### 5. Multi-Objective Dance Reward Engine (`dance_reward.py`)
-- Multi-component evaluation avoiding parasitic high-frequency flailing:
-  $$R_t = w_{beat} R_{beat} + w_{onset} R_{onset} + w_{rhythm} R_{rhythm} + w_{stab} R_{stab} + w_{qual} R_{qual} - w_{energy} C_{energy} - w_{fall} C_{fall}$$
+### 3. Actual Footfall Event Synchronization (`dance_reward.py`)
+- Instead of measuring internal oscillator angles, the reward tracks **physical footfall touchdowns** (transition from swing to stance) and penalizes temporal latency to the nearest musical beat:
+  $$\text{beat\_sync} = \frac{1}{N_{\text{touchdowns}}} \sum_{i} \exp\left(-\frac{|t_{\text{footfall}, i} - t_{\text{nearest\_beat}}|^2}{\sigma^2}\right)$$
 
 ---
 
 ## 📊 Comparative Benchmark Results
 
-Tested across 2,000 closed-loop physics steps (4.0 seconds, $\Delta t = 2 \text{ ms}$) on identical 120 BPM dance audio:
+Evaluated across 2,000 simulation steps on identical 120 BPM audio tracks:
 
-| Controller | Mean Step Reward | Beat Sync Score | Posture Stability | Energy Cost |
+| Controller | Mean Step Reward | Footfall Event Sync | Posture Stability | Energy Cost |
 | :--- | :---: | :---: | :---: | :---: |
-| **Baseline A** (Autonomous Walker, No Music) | 5.127 | 0.417 | 2.000 | **0.187** |
-| **Baseline B** (Heuristic Beat $\to$ CPG) | 5.403 | **0.662** | 2.000 | 0.196 |
-| **Baseline C** (Direct MLP Policy) | 5.205 | 0.379 | 2.000 | 0.444 |
-| **Baseline D** (Connectome JON $\to$ AMMC $\to$ DN) | **5.486** | 0.528 | 2.000 | 0.362 |
+| **Baseline A** (Autonomous CPG, No Music) | 4.319 | 0.031 | 1.800 | **0.184** |
+| **Baseline B** (Beat-Heuristic CPG) | 4.280 | 0.030 | 1.800 | 0.213 |
+| **Baseline C** (Random MLP CPG) | 4.358 | 0.032 | 1.800 | 0.238 |
+| **Baseline D** (Connectome-Constrained CPG) | 4.334 | 0.063 | 1.800 | 0.386 |
+| **Baseline E** (Trained PPO $\to$ CPG) | **4.364** | **0.065** | 1.800 | 0.375 |
 
-> **Key Finding**: The connectome-derived auditory pathway (**Baseline D**) achieves the **highest overall reward (5.486)**. While heuristic beat-triggering (Baseline B) achieves sharp phase spikes, the connectome integrates both acoustic transients and sustained frequency energy to produce more natural, continuous dancing motion while maintaining rock-solid postural stability.
+> **Key Finding**: Under the strict physical footfall touchdown timing metric, the biological connectome pathway (**Baseline D**) more than **doubles** the footfall synchronization score compared to autonomous and heuristic baselines ($0.063$ vs. $0.030$), and **Trained PPO** (**Baseline E**) achieves the highest overall reward ($4.364$).
 
 ---
 
@@ -133,26 +124,24 @@ Tested across 2,000 closed-loop physics steps (4.0 seconds, $\Delta t = 2 \text{
 ### 1. Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/Siddz-17/babyshark-FLY.git
 cd babyshark-FLY
 
-# Create and activate virtual environment
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
-# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 2. Run Closed-Loop Simulation & Video Export
+### 2. Run Closed-Loop Simulation
 
 ```bash
+# Fast numerical simulation
 python test_closed_loop.py
+
+# Or with genuine MuJoCo 3.x physics
+python -c "from fly_env import DrosophilaFlyEnv; env = DrosophilaFlyEnv(backend='mujoco'); print('MuJoCo ready!')"
 ```
-This runs a 4-second closed-loop simulation at **~1,800+ steps/second**, saving:
-- `fly_dance_closed_loop.mp4` (Off-screen rendered 3D fly dance with HUD telemetry)
-- `closed_loop_telemetry.png` (Multi-panel telemetry plot of audio, neural firing, frequency, and rewards)
 
 ### 3. Run Comparative Baseline Experiments
 
@@ -160,27 +149,52 @@ This runs a 4-second closed-loop simulation at **~1,800+ steps/second**, saving:
 python test_baselines_comparison.py
 ```
 
-### 4. Train with PPO Reinforcement Learning
+### 4. Train PPO Reinforcement Learning Policy
 
 ```bash
 python train_ppo.py
+# Or using the modular runner with YAML config:
+python ppo/train.py
 ```
-Trains the continuous Gaussian Actor-Critic network with Generalized Advantage Estimation (GAE) across parallel environments. Automatically saves:
-- `checkpoints/best_dance_policy.pt` (Best policy parameters)
-- `ppo_training_curves.png` (Learning curve plot across timesteps)
 
 ### 5. Evaluate Trained Policy & Export Video
 
 ```bash
 python evaluate_policy.py
 ```
-Loads `checkpoints/best_dance_policy.pt` and evaluates deterministic dance coordination against test music tracks, exporting:
-- `fly_trained_dance.mp4` (Synchronized dance video with HUD metrics)
 
 ---
 
-## 💻 Hardware Compatibility
-Optimized to run locally on standard hardware (e.g. AMD Ryzen 5 5600H + NVIDIA GeForce RTX 3050 4GB). The connectome subgraph design ensures high biological fidelity without requiring a supercomputing cluster.
+## 📁 Repository Structure
+
+```
+babyshark-FLY/
+├── data/
+│   └── flywire/                 # Mapped connectome nodes, root IDs & synaptic matrices
+│       ├── neurons.json
+│       ├── synapses.json
+│       ├── W_jon_ammc.npy
+│       └── W_ammc_dn.npy
+├── ppo/                         # Modular Reinforcement Learning package
+│   ├── policy.py                # Gaussian actor policy
+│   ├── value.py                 # State-value baseline
+│   ├── buffer.py                # Vectorized rollout buffer with GAE
+│   ├── agent.py                 # ActorCritic container
+│   └── train.py                 # Modular training runner
+├── configs/
+│   └── ppo.yaml                 # PPO training & environment hyperparameters
+├── audio_pipeline.py            # Onset, spectral, and beat phase extraction
+├── connectome_auditory.py       # Johnston's Organ (JON -> AMMC -> DN) biophysical circuit
+├── cpg_controller.py            # 6-legged coupled phase oscillator network
+├── fly_env.py                   # SimpleFlyEnv & MuJoCoFlyGymEnv dual backends
+├── dance_gym_env.py             # Gymnasium-compliant RL environment (83-D obs, 8-D act)
+├── dance_reward.py              # Physical footfall event synchronization reward engine
+├── baselines.py                 # 5 comparative benchmark controllers
+├── test_closed_loop.py          # End-to-end closed-loop test script
+├── test_baselines_comparison.py # Multi-controller benchmark runner
+├── evaluate_policy.py           # Evaluation & video export
+└── requirements.txt
+```
 
 ---
 

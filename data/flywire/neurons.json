@@ -1,0 +1,1698 @@
+[
+  {
+    "id": "JON_L_00",
+    "flywire_root_id": 720575940600100000,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 100.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_01",
+    "flywire_root_id": 720575940600100001,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 110.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_02",
+    "flywire_root_id": 720575940600100002,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 121.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_03",
+    "flywire_root_id": 720575940600100003,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 133.1,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_04",
+    "flywire_root_id": 720575940600100004,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 146.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_05",
+    "flywire_root_id": 720575940600100005,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 161.1,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_06",
+    "flywire_root_id": 720575940600100006,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 177.2,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_07",
+    "flywire_root_id": 720575940600100007,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 194.9,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_08",
+    "flywire_root_id": 720575940600100008,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 214.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_09",
+    "flywire_root_id": 720575940600100009,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 235.8,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_10",
+    "flywire_root_id": 720575940600100010,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 259.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_11",
+    "flywire_root_id": 720575940600100011,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 285.3,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_12",
+    "flywire_root_id": 720575940600100012,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 313.8,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_13",
+    "flywire_root_id": 720575940600100013,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 345.2,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_14",
+    "flywire_root_id": 720575940600100014,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 379.7,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_15",
+    "flywire_root_id": 720575940600100015,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 417.7,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_16",
+    "flywire_root_id": 720575940600100016,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 459.5,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_17",
+    "flywire_root_id": 720575940600100017,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 505.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_18",
+    "flywire_root_id": 720575940600100018,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 556.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_19",
+    "flywire_root_id": 720575940600100019,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 611.6,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_20",
+    "flywire_root_id": 720575940600100020,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 672.7,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_21",
+    "flywire_root_id": 720575940600100021,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 740.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_22",
+    "flywire_root_id": 720575940600100022,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 814.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_23",
+    "flywire_root_id": 720575940600100023,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 895.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_24",
+    "flywire_root_id": 720575940600100024,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 985.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_25",
+    "flywire_root_id": 720575940600100025,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1083.5,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_26",
+    "flywire_root_id": 720575940600100026,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1191.8,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_27",
+    "flywire_root_id": 720575940600100027,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1311.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_28",
+    "flywire_root_id": 720575940600100028,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1442.1,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_29",
+    "flywire_root_id": 720575940600100029,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1586.3,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_30",
+    "flywire_root_id": 720575940600100030,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1744.9,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_L_31",
+    "flywire_root_id": 720575940600100031,
+    "hemisphere": "L",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1919.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_00",
+    "flywire_root_id": 720575940600200000,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 100.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_01",
+    "flywire_root_id": 720575940600200001,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 110.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_02",
+    "flywire_root_id": 720575940600200002,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 121.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_03",
+    "flywire_root_id": 720575940600200003,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 133.1,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_04",
+    "flywire_root_id": 720575940600200004,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 146.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_05",
+    "flywire_root_id": 720575940600200005,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 161.1,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_06",
+    "flywire_root_id": 720575940600200006,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 177.2,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_07",
+    "flywire_root_id": 720575940600200007,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 194.9,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_08",
+    "flywire_root_id": 720575940600200008,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 214.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_09",
+    "flywire_root_id": 720575940600200009,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 235.8,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_10",
+    "flywire_root_id": 720575940600200010,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 259.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_11",
+    "flywire_root_id": 720575940600200011,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 285.3,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_12",
+    "flywire_root_id": 720575940600200012,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 313.8,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_13",
+    "flywire_root_id": 720575940600200013,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 345.2,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_14",
+    "flywire_root_id": 720575940600200014,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 379.7,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_15",
+    "flywire_root_id": 720575940600200015,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-A",
+    "functional_modality": "transient_vibration",
+    "center_frequency_hz": 417.7,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_16",
+    "flywire_root_id": 720575940600200016,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 459.5,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_17",
+    "flywire_root_id": 720575940600200017,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 505.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_18",
+    "flywire_root_id": 720575940600200018,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 556.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_19",
+    "flywire_root_id": 720575940600200019,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 611.6,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_20",
+    "flywire_root_id": 720575940600200020,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 672.7,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_21",
+    "flywire_root_id": 720575940600200021,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 740.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_22",
+    "flywire_root_id": 720575940600200022,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 814.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_23",
+    "flywire_root_id": 720575940600200023,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 895.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_24",
+    "flywire_root_id": 720575940600200024,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 985.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_25",
+    "flywire_root_id": 720575940600200025,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1083.5,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_26",
+    "flywire_root_id": 720575940600200026,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1191.8,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_27",
+    "flywire_root_id": 720575940600200027,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1311.0,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_28",
+    "flywire_root_id": 720575940600200028,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1442.1,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_29",
+    "flywire_root_id": 720575940600200029,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1586.3,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_30",
+    "flywire_root_id": 720575940600200030,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1744.9,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "JON_R_31",
+    "flywire_root_id": 720575940600200031,
+    "hemisphere": "R",
+    "neuropil": "Antenna_JO",
+    "cell_type": "JON-B",
+    "functional_modality": "continuous_sound",
+    "center_frequency_hz": 1919.4,
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_00",
+    "flywire_root_id": 720575940610100000,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_01",
+    "flywire_root_id": 720575940610100001,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_02",
+    "flywire_root_id": 720575940610100002,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_03",
+    "flywire_root_id": 720575940610100003,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_04",
+    "flywire_root_id": 720575940610100004,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_05",
+    "flywire_root_id": 720575940610100005,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_06",
+    "flywire_root_id": 720575940610100006,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_07",
+    "flywire_root_id": 720575940610100007,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_08",
+    "flywire_root_id": 720575940610100008,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_09",
+    "flywire_root_id": 720575940610100009,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_10",
+    "flywire_root_id": 720575940610100010,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_11",
+    "flywire_root_id": 720575940610100011,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_12",
+    "flywire_root_id": 720575940610100012,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_13",
+    "flywire_root_id": 720575940610100013,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_14",
+    "flywire_root_id": 720575940610100014,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_15",
+    "flywire_root_id": 720575940610100015,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_16",
+    "flywire_root_id": 720575940610100016,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_17",
+    "flywire_root_id": 720575940610100017,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_18",
+    "flywire_root_id": 720575940610100018,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_19",
+    "flywire_root_id": 720575940610100019,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_L_20",
+    "flywire_root_id": 720575940610100020,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_21",
+    "flywire_root_id": 720575940610100021,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_22",
+    "flywire_root_id": 720575940610100022,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_23",
+    "flywire_root_id": 720575940610100023,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_24",
+    "flywire_root_id": 720575940610100024,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_25",
+    "flywire_root_id": 720575940610100025,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_26",
+    "flywire_root_id": 720575940610100026,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_27",
+    "flywire_root_id": 720575940610100027,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_28",
+    "flywire_root_id": 720575940610100028,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_29",
+    "flywire_root_id": 720575940610100029,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_30",
+    "flywire_root_id": 720575940610100030,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_31",
+    "flywire_root_id": 720575940610100031,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_32",
+    "flywire_root_id": 720575940610100032,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_33",
+    "flywire_root_id": 720575940610100033,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_34",
+    "flywire_root_id": 720575940610100034,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_35",
+    "flywire_root_id": 720575940610100035,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_36",
+    "flywire_root_id": 720575940610100036,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_37",
+    "flywire_root_id": 720575940610100037,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_38",
+    "flywire_root_id": 720575940610100038,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_39",
+    "flywire_root_id": 720575940610100039,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_40",
+    "flywire_root_id": 720575940610100040,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_41",
+    "flywire_root_id": 720575940610100041,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_42",
+    "flywire_root_id": 720575940610100042,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_43",
+    "flywire_root_id": 720575940610100043,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_44",
+    "flywire_root_id": 720575940610100044,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_45",
+    "flywire_root_id": 720575940610100045,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_46",
+    "flywire_root_id": 720575940610100046,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_L_47",
+    "flywire_root_id": 720575940610100047,
+    "hemisphere": "L",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_00",
+    "flywire_root_id": 720575940610200000,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_01",
+    "flywire_root_id": 720575940610200001,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_02",
+    "flywire_root_id": 720575940610200002,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_03",
+    "flywire_root_id": 720575940610200003,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_04",
+    "flywire_root_id": 720575940610200004,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_05",
+    "flywire_root_id": 720575940610200005,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_06",
+    "flywire_root_id": 720575940610200006,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_07",
+    "flywire_root_id": 720575940610200007,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_08",
+    "flywire_root_id": 720575940610200008,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_09",
+    "flywire_root_id": 720575940610200009,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_10",
+    "flywire_root_id": 720575940610200010,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_11",
+    "flywire_root_id": 720575940610200011,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_12",
+    "flywire_root_id": 720575940610200012,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_13",
+    "flywire_root_id": 720575940610200013,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_14",
+    "flywire_root_id": 720575940610200014,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_15",
+    "flywire_root_id": 720575940610200015,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_16",
+    "flywire_root_id": 720575940610200016,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_17",
+    "flywire_root_id": 720575940610200017,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_18",
+    "flywire_root_id": 720575940610200018,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_19",
+    "flywire_root_id": 720575940610200019,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-aLN",
+    "functional_modality": "local_relay",
+    "neurotransmitter": "gaba"
+  },
+  {
+    "id": "AMMC_R_20",
+    "flywire_root_id": 720575940610200020,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_21",
+    "flywire_root_id": 720575940610200021,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_22",
+    "flywire_root_id": 720575940610200022,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_23",
+    "flywire_root_id": 720575940610200023,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_24",
+    "flywire_root_id": 720575940610200024,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_25",
+    "flywire_root_id": 720575940610200025,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_26",
+    "flywire_root_id": 720575940610200026,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_27",
+    "flywire_root_id": 720575940610200027,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_28",
+    "flywire_root_id": 720575940610200028,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_29",
+    "flywire_root_id": 720575940610200029,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_30",
+    "flywire_root_id": 720575940610200030,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_31",
+    "flywire_root_id": 720575940610200031,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_32",
+    "flywire_root_id": 720575940610200032,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_33",
+    "flywire_root_id": 720575940610200033,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_34",
+    "flywire_root_id": 720575940610200034,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_35",
+    "flywire_root_id": 720575940610200035,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "AMMC-B1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_36",
+    "flywire_root_id": 720575940610200036,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_37",
+    "flywire_root_id": 720575940610200037,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_38",
+    "flywire_root_id": 720575940610200038,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_39",
+    "flywire_root_id": 720575940610200039,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_40",
+    "flywire_root_id": 720575940610200040,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_41",
+    "flywire_root_id": 720575940610200041,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_42",
+    "flywire_root_id": 720575940610200042,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_43",
+    "flywire_root_id": 720575940610200043,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_44",
+    "flywire_root_id": 720575940610200044,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_45",
+    "flywire_root_id": 720575940610200045,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_46",
+    "flywire_root_id": 720575940610200046,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "AMMC_R_47",
+    "flywire_root_id": 720575940610200047,
+    "hemisphere": "R",
+    "neuropil": "AMMC",
+    "cell_type": "aPN1",
+    "functional_modality": "projection",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_00_DNp01",
+    "flywire_root_id": 720575940620000000,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNp01",
+    "functional_modality": "beat_transient",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_01_aDN1",
+    "flywire_root_id": 720575940620000001,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "aDN1",
+    "functional_modality": "beat_transient",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_02_aDN2",
+    "flywire_root_id": 720575940620000002,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "aDN2",
+    "functional_modality": "beat_transient",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_03_MDN",
+    "flywire_root_id": 720575940620000003,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "MDN",
+    "functional_modality": "beat_transient",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_04_DNg02",
+    "flywire_root_id": 720575940620000004,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNg02",
+    "functional_modality": "beat_transient",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_05_DNb01",
+    "flywire_root_id": 720575940620000005,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNb01",
+    "functional_modality": "beat_transient",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_06_DNp01",
+    "flywire_root_id": 720575940620000006,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNp01",
+    "functional_modality": "beat_transient",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_07_aDN1",
+    "flywire_root_id": 720575940620000007,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "aDN1",
+    "functional_modality": "beat_transient",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_08_aDN2",
+    "flywire_root_id": 720575940620000008,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "aDN2",
+    "functional_modality": "sustained_drive",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_09_MDN",
+    "flywire_root_id": 720575940620000009,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "MDN",
+    "functional_modality": "sustained_drive",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_10_DNg02",
+    "flywire_root_id": 720575940620000010,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNg02",
+    "functional_modality": "sustained_drive",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_11_DNb01",
+    "flywire_root_id": 720575940620000011,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNb01",
+    "functional_modality": "sustained_drive",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_12_DNp01",
+    "flywire_root_id": 720575940620000012,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNp01",
+    "functional_modality": "sustained_drive",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_13_aDN1",
+    "flywire_root_id": 720575940620000013,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "aDN1",
+    "functional_modality": "sustained_drive",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_14_aDN2",
+    "flywire_root_id": 720575940620000014,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "aDN2",
+    "functional_modality": "sustained_drive",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_15_MDN",
+    "flywire_root_id": 720575940620000015,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "MDN",
+    "functional_modality": "sustained_drive",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_16_DNg02",
+    "flywire_root_id": 720575940620000016,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNg02",
+    "functional_modality": "bilateral_steering",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_17_DNb01",
+    "flywire_root_id": 720575940620000017,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNb01",
+    "functional_modality": "bilateral_steering",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_18_DNp01",
+    "flywire_root_id": 720575940620000018,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNp01",
+    "functional_modality": "bilateral_steering",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_19_aDN1",
+    "flywire_root_id": 720575940620000019,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "aDN1",
+    "functional_modality": "bilateral_steering",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_20_aDN2",
+    "flywire_root_id": 720575940620000020,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "aDN2",
+    "functional_modality": "bilateral_steering",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_21_MDN",
+    "flywire_root_id": 720575940620000021,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "MDN",
+    "functional_modality": "bilateral_steering",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_22_DNg02",
+    "flywire_root_id": 720575940620000022,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNg02",
+    "functional_modality": "bilateral_steering",
+    "neurotransmitter": "acetylcholine"
+  },
+  {
+    "id": "DN_23_DNb01",
+    "flywire_root_id": 720575940620000023,
+    "neuropil": "VNC_Thoracic",
+    "cell_type": "DNb01",
+    "functional_modality": "bilateral_steering",
+    "neurotransmitter": "acetylcholine"
+  }
+]

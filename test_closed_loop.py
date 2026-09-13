@@ -112,8 +112,10 @@ def run_closed_loop_simulation(
         # E. Step FlyGym Biomechanical Physics
         proprio = env.step(target_joints)
 
-        # F. Compute Multi-Objective Closed-Loop Reward
+        # F. Compute Multi-Objective Closed-Loop Reward (with actual footfall event timing)
         breakdown = reward_engine.compute_reward(
+            sim_time=t,
+            beat_times=audio.beat_times,
             beat_phase=audio_frame.beat_phase,
             beat_pulse=audio_frame.beat_pulse,
             onset_strength=audio_frame.onset_strength,

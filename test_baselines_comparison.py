@@ -1,10 +1,11 @@
 """
 Comparative Benchmark Experiment:
-Evaluates Baseline A, Baseline B, Baseline C, and Baseline D across identical 120 BPM audio tracks:
-- Baseline A: Null / No Music
-- Baseline B: Heuristic Beat -> CPG
-- Baseline C: Direct MLP Policy
-- Baseline D: Bio-Inspired Connectome Pathway (JON -> AMMC -> DN -> CPG)
+Evaluates all 5 controllers across identical 120 BPM audio tracks:
+- Baseline A: Autonomous CPG (No music)
+- Baseline B: Beat-Heuristic CPG (Rule-based tracking)
+- Baseline C: Random MLP CPG (Un-optimized network)
+- Baseline D: Connectome-Constrained CPG (FlyWire auditory pathway in biological mode)
+- Baseline E: Trained PPO -> CPG (Learned reinforcement learning motor policy)
 """
 
 import numpy as np
@@ -14,17 +15,18 @@ from cpg_controller import DrosophilaCPG
 from fly_env import DrosophilaFlyEnv
 from dance_reward import DanceRewardEngine
 from baselines import (
-    BaselineA_NoMusic,
-    BaselineB_BeatCPG,
-    BaselineC_DirectMLP,
-    BaselineD_ConnectomeAuditoryCPG,
+    BaselineA_AutonomousCPG,
+    BaselineB_BeatHeuristicCPG,
+    BaselineC_RandomMLP,
+    BaselineD_ConnectomeCPG,
+    BaselineE_TrainedPPO,
 )
 
 
-def evaluate_controller(name: str, controller, duration: float = 4.0, bpm: float = 120.0, dt: float = 0.002):
+def evaluate_controller(name: str, controller, duration: float = 4.0, bpm: float = 120.0, dt: float = 0.002, backend: str = "simple"):
     audio = AudioRhythmPipeline(bpm=bpm, duration=duration, synthetic_type="dance_beat")
     cpg = DrosophilaCPG(dt=dt, default_freq=bpm / 60.0)
-    env = DrosophilaFlyEnv(dt=dt)
+    env = DrosophilaFlyEnv(backend=backend, dt=dt)
     proprio = env.reset()
     reward_engine = DanceRewardEngine(nominal_com_height=1.25)
 
@@ -41,7 +43,7 @@ def evaluate_controller(name: str, controller, duration: float = 4.0, bpm: float
         t = step * dt
         audio_frame = audio.get_frame(t)
 
-        if isinstance(controller, BaselineD_ConnectomeAuditoryCPG):
+        if isinstance(controller, (BaselineD_ConnectomeCPG, BaselineE_TrainedPPO)):
             cpg_mod, _ = controller.step(audio_frame, proprio)
         else:
             cpg_mod = controller.step(audio_frame, proprio)
@@ -50,6 +52,8 @@ def evaluate_controller(name: str, controller, duration: float = 4.0, bpm: float
         proprio = env.step(target_joints)
 
         breakdown = reward_engine.compute_reward(
+            sim_time=t,
+            beat_times=audio.beat_times,
             beat_phase=audio_frame.beat_phase,
             beat_pulse=audio_frame.beat_pulse,
             onset_strength=audio_frame.onset_strength,
@@ -77,31 +81,32 @@ def evaluate_controller(name: str, controller, duration: float = 4.0, bpm: float
     }
 
 
-def run_benchmark():
-    print("=" * 80)
-    print("RUNNING DROSOPHILA DANCE BENCHMARK EXPERIMENT")
-    print("Comparing Baseline A, Baseline B, Baseline C, and Baseline D (Connectome)")
-    print("=" * 80)
+def run_benchmark(backend: str = "simple"):
+    print("=" * 86)
+    print(f"RUNNING DROSOPHILA DANCE BENCHMARK EXPERIMENT (Backend: {backend.upper()})")
+    print("Comparing Baseline A, B, C, D (Connectome), and E (Trained PPO)")
+    print("=" * 86)
 
     controllers = [
-        ("Baseline A (No Music)", BaselineA_NoMusic(stepping_freq=2.5)),
-        ("Baseline B (Heuristic Beat->CPG)", BaselineB_BeatCPG()),
-        ("Baseline C (Direct MLP)", BaselineC_DirectMLP()),
-        ("Baseline D (Connectome JON->AMMC->DN)", BaselineD_ConnectomeAuditoryCPG()),
+        ("Baseline A (Autonomous CPG)", BaselineA_AutonomousCPG(stepping_freq=2.5)),
+        ("Baseline B (Beat-Heuristic CPG)", BaselineB_BeatHeuristicCPG()),
+        ("Baseline C (Random MLP CPG)", BaselineC_RandomMLP()),
+        ("Baseline D (Connectome-Constrained CPG)", BaselineD_ConnectomeCPG()),
+        ("Baseline E (Trained PPO -> CPG)", BaselineE_TrainedPPO()),
     ]
 
     results = []
     for name, ctl in controllers:
         print(f"Evaluating {name}...")
-        res = evaluate_controller(name, ctl)
+        res = evaluate_controller(name, ctl, backend=backend)
         results.append(res)
 
-    print("\n" + "=" * 80)
-    print(f"{'Controller Name':<38} | {'Reward':>8} | {'Beat Sync':>10} | {'Stability':>10} | {'Energy Cost':>11}")
-    print("-" * 80)
+    print("\n" + "=" * 86)
+    print(f"{'Controller Name':<42} | {'Reward':>8} | {'Footfall Sync':>14} | {'Stability':>10} | {'Energy Cost':>11}")
+    print("-" * 86)
     for r in results:
-        print(f"{r['name']:<38} | {r['mean_reward']:>8.3f} | {r['mean_beat_sync']:>10.3f} | {r['mean_stability']:>10.3f} | {r['mean_energy']:>11.3f}")
-    print("=" * 80)
+        print(f"{r['name']:<42} | {r['mean_reward']:>8.3f} | {r['mean_beat_sync']:>14.3f} | {r['mean_stability']:>10.3f} | {r['mean_energy']:>11.3f}")
+    print("=" * 86)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,1402 @@
+[
+  {
+    "pre": "JON_L_00",
+    "post": "AMMC_L_00",
+    "synapse_count": 16,
+    "weight": 1.28,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_01",
+    "post": "AMMC_L_00",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_00",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_00",
+    "synapse_count": 12,
+    "weight": 0.96,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_00",
+    "post": "AMMC_L_01",
+    "synapse_count": 18,
+    "weight": 1.44,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_01",
+    "post": "AMMC_L_01",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_01",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_01",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_01",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_01",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_00",
+    "post": "AMMC_L_02",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_01",
+    "post": "AMMC_L_02",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_02",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_02",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_02",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_01",
+    "post": "AMMC_L_03",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_03",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_03",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_03",
+    "synapse_count": 13,
+    "weight": 1.04,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_03",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_03",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_00",
+    "post": "AMMC_L_04",
+    "synapse_count": 18,
+    "weight": 1.44,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_01",
+    "post": "AMMC_L_04",
+    "synapse_count": 15,
+    "weight": 1.2,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_04",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_04",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_04",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_04",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_04",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_01",
+    "post": "AMMC_L_05",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_05",
+    "synapse_count": 22,
+    "weight": 1.76,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_05",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_05",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_05",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_05",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_08",
+    "post": "AMMC_L_05",
+    "synapse_count": 11,
+    "weight": 0.88,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_01",
+    "post": "AMMC_L_06",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_06",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_06",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_06",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_06",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_06",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_01",
+    "post": "AMMC_L_07",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_07",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_07",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_07",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_07",
+    "synapse_count": 9,
+    "weight": 0.72,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_07",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_07",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_08",
+    "synapse_count": 12,
+    "weight": 0.96,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_08",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_08",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_08",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_08",
+    "synapse_count": 11,
+    "weight": 0.88,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_08",
+    "post": "AMMC_L_08",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_08",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_08",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_09",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_09",
+    "synapse_count": 18,
+    "weight": 1.44,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_09",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_09",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_08",
+    "post": "AMMC_L_09",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_09",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_09",
+    "synapse_count": 13,
+    "weight": 1.04,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_10",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_10",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_10",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_10",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_10",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_08",
+    "post": "AMMC_L_10",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_10",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_10",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_02",
+    "post": "AMMC_L_11",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_03",
+    "post": "AMMC_L_11",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_04",
+    "post": "AMMC_L_11",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_11",
+    "synapse_count": 15,
+    "weight": 1.2,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_11",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_11",
+    "synapse_count": 14,
+    "weight": 1.12,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_08",
+    "post": "AMMC_L_11",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_11",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_11",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_11",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_12",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_12",
+    "synapse_count": 13,
+    "weight": 1.04,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_12",
+    "synapse_count": 9,
+    "weight": 0.72,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_08",
+    "post": "AMMC_L_12",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_12",
+    "synapse_count": 13,
+    "weight": 1.04,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_12",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_12",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_12",
+    "post": "AMMC_L_12",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_06",
+    "post": "AMMC_L_13",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_13",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_08",
+    "post": "AMMC_L_13",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_13",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_13",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_13",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_12",
+    "post": "AMMC_L_13",
+    "synapse_count": 19,
+    "weight": 1.52,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_14",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_08",
+    "post": "AMMC_L_14",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_14",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_14",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_05",
+    "post": "AMMC_L_15",
+    "synapse_count": 14,
+    "weight": 1.12,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_15",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_15",
+    "synapse_count": 11,
+    "weight": 0.88,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_15",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_12",
+    "post": "AMMC_L_15",
+    "synapse_count": 15,
+    "weight": 1.2,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_15",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_16",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_16",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_16",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_16",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_12",
+    "post": "AMMC_L_16",
+    "synapse_count": 12,
+    "weight": 0.96,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_17",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_17",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_12",
+    "post": "AMMC_L_17",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_13",
+    "post": "AMMC_L_17",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_17",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_17",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_07",
+    "post": "AMMC_L_18",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_18",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_10",
+    "post": "AMMC_L_18",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_18",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_12",
+    "post": "AMMC_L_18",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_18",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_16",
+    "post": "AMMC_L_18",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_18",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_19",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_12",
+    "post": "AMMC_L_19",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_13",
+    "post": "AMMC_L_19",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_19",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_20",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_20",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_12",
+    "post": "AMMC_L_20",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_13",
+    "post": "AMMC_L_20",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_20",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_20",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_16",
+    "post": "AMMC_L_20",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_20",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_09",
+    "post": "AMMC_L_21",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_21",
+    "synapse_count": 11,
+    "weight": 0.88,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_12",
+    "post": "AMMC_L_21",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_13",
+    "post": "AMMC_L_21",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_21",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_16",
+    "post": "AMMC_L_21",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_11",
+    "post": "AMMC_L_22",
+    "synapse_count": 17,
+    "weight": 1.36,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_13",
+    "post": "AMMC_L_22",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_22",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_22",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_16",
+    "post": "AMMC_L_22",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_18",
+    "post": "AMMC_L_22",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_22",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_23",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_23",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_23",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_23",
+    "synapse_count": 14,
+    "weight": 1.12,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_24",
+    "synapse_count": 13,
+    "weight": 1.04,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_24",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_16",
+    "post": "AMMC_L_24",
+    "synapse_count": 13,
+    "weight": 1.04,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_24",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_24",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_25",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_25",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_16",
+    "post": "AMMC_L_25",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_25",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_18",
+    "post": "AMMC_L_25",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_25",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_22",
+    "post": "AMMC_L_25",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_14",
+    "post": "AMMC_L_26",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_26",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_16",
+    "post": "AMMC_L_26",
+    "synapse_count": 8,
+    "weight": 0.64,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_26",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_26",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_27",
+    "synapse_count": 9,
+    "weight": 0.72,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_16",
+    "post": "AMMC_L_27",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_27",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_18",
+    "post": "AMMC_L_27",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_27",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_20",
+    "post": "AMMC_L_27",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_15",
+    "post": "AMMC_L_28",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_28",
+    "synapse_count": 17,
+    "weight": 1.36,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_18",
+    "post": "AMMC_L_28",
+    "synapse_count": 18,
+    "weight": 1.44,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_28",
+    "synapse_count": 12,
+    "weight": 0.96,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_20",
+    "post": "AMMC_L_28",
+    "synapse_count": 25,
+    "weight": 2.0,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_21",
+    "post": "AMMC_L_28",
+    "synapse_count": 6,
+    "weight": 0.48,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_29",
+    "synapse_count": 13,
+    "weight": 1.04,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_18",
+    "post": "AMMC_L_29",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_29",
+    "synapse_count": 12,
+    "weight": 0.96,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_20",
+    "post": "AMMC_L_29",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_21",
+    "post": "AMMC_L_29",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_22",
+    "post": "AMMC_L_29",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_24",
+    "post": "AMMC_L_29",
+    "synapse_count": 19,
+    "weight": 1.52,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_17",
+    "post": "AMMC_L_30",
+    "synapse_count": 4,
+    "weight": 0.32,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_30",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_20",
+    "post": "AMMC_L_30",
+    "synapse_count": 10,
+    "weight": 0.8,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_22",
+    "post": "AMMC_L_30",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_23",
+    "post": "AMMC_L_30",
+    "synapse_count": 15,
+    "weight": 1.2,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_25",
+    "post": "AMMC_L_30",
+    "synapse_count": 3,
+    "weight": 0.24,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_19",
+    "post": "AMMC_L_31",
+    "synapse_count": 7,
+    "weight": 0.56,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_20",
+    "post": "AMMC_L_31",
+    "synapse_count": 18,
+    "weight": 1.44,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_21",
+    "post": "AMMC_L_31",
+    "synapse_count": 11,
+    "weight": 0.88,
+    "transmitter": "acetylcholine"
+  },
+  {
+    "pre": "JON_L_22",
+    "post": "AMMC_L_31",
+    "synapse_count": 5,
+    "weight": 0.4,
+    "transmitter": "acetylcholine"
+  }
+]
