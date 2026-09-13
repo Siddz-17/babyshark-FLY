@@ -160,6 +160,23 @@ This runs a 4-second closed-loop simulation at **~1,800+ steps/second**, saving:
 python test_baselines_comparison.py
 ```
 
+### 4. Train with PPO Reinforcement Learning
+
+```bash
+python train_ppo.py
+```
+Trains the continuous Gaussian Actor-Critic network with Generalized Advantage Estimation (GAE) across parallel environments. Automatically saves:
+- `checkpoints/best_dance_policy.pt` (Best policy parameters)
+- `ppo_training_curves.png` (Learning curve plot across timesteps)
+
+### 5. Evaluate Trained Policy & Export Video
+
+```bash
+python evaluate_policy.py
+```
+Loads `checkpoints/best_dance_policy.pt` and evaluates deterministic dance coordination against test music tracks, exporting:
+- `fly_trained_dance.mp4` (Synchronized dance video with HUD metrics)
+
 ---
 
 ## 💻 Hardware Compatibility
