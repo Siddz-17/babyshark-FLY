@@ -232,8 +232,9 @@ class DrosophilaDanceGymEnv(gym.Env):
             "rhythmicity": breakdown.rhythmicity,
             "movement_quality": breakdown.movement_quality,
             "energy_penalty": breakdown.energy_penalty,
-            "com_height": proprio.com_position[2],
-            "is_fallen": breakdown.is_fallen,
+            "com_height": float(proprio.com_position[2]),
+            "forward_velocity": float(proprio.com_velocity[0]),
+            "is_fallen": bool(breakdown.is_fallen),
         }
 
         return obs, reward, terminated, truncated, info
