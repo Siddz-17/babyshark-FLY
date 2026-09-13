@@ -1,0 +1,47 @@
+[
+  {
+    "condition": "1. Biological Connectome",
+    "mean_reward": 4.4036,
+    "std_reward": 0.0376,
+    "mean_footfall_sync": 0.0768,
+    "std_footfall_sync": 0.0443,
+    "mean_stability": 1.8,
+    "mean_energy": 0.3562
+  },
+  {
+    "condition": "2. Weight Shuffled",
+    "mean_reward": 4.6067,
+    "std_reward": 0.1889,
+    "mean_footfall_sync": 0.221,
+    "std_footfall_sync": 0.1756,
+    "mean_stability": 1.8,
+    "mean_energy": 0.3236
+  },
+  {
+    "condition": "3. Degree-Preserving Shuffled",
+    "mean_reward": 4.691,
+    "std_reward": 0.1964,
+    "mean_footfall_sync": 0.2791,
+    "std_footfall_sync": 0.1655,
+    "mean_stability": 1.8,
+    "mean_energy": 0.3298
+  },
+  {
+    "condition": "4. Direct MLP",
+    "mean_reward": 4.4594,
+    "std_reward": 0.1449,
+    "mean_footfall_sync": 0.1041,
+    "std_footfall_sync": 0.0947,
+    "mean_stability": 1.8,
+    "mean_energy": 0.2398
+  },
+  {
+    "condition": "5. Ablated Proprioception",
+    "mean_reward": 4.4231,
+    "std_reward": 0.0549,
+    "mean_footfall_sync": 0.0898,
+    "std_footfall_sync": 0.0627,
+    "mean_stability": 1.8,
+    "mean_energy": 0.354
+  }
+]
