@@ -53,6 +53,8 @@ class DrosophilaAuditoryCircuit:
         dt: float = 0.002,                      # 2 ms physics simulation timestep (500 Hz)
         data_dir: str = "data/flywire",
         mode: str = "biological",               # 'biological' (Mode B) or 'engineered' (Mode A)
+        custom_W_jon_ammc: Optional[np.ndarray] = None,
+        custom_W_ammc_dn: Optional[np.ndarray] = None,
     ):
         self.n_jon = n_jon_per_antenna
         self.n_ammc = n_ammc_per_side
@@ -60,6 +62,8 @@ class DrosophilaAuditoryCircuit:
         self.dt = dt
         self.data_dir = data_dir
         self.mode = mode.lower()
+        self.custom_W_jon_ammc = custom_W_jon_ammc
+        self.custom_W_ammc_dn = custom_W_ammc_dn
 
         # Total neurons in auditory circuit = 184
         self.total_neurons = 2 * self.n_jon + 2 * self.n_ammc + self.n_dns
@@ -79,43 +83,49 @@ class DrosophilaAuditoryCircuit:
         self.jon_center_freqs = np.geomspace(100.0, 1200.0, self.n_jon)
 
     def _load_or_build_connectome(self):
-        """Loads verified FlyWire matrices from disk or builds them procedurally."""
-        w_ja_path = os.path.join(self.data_dir, "W_jon_ammc.npy")
-        w_dn_path = os.path.join(self.data_dir, "W_ammc_dn.npy")
-
-        if os.path.exists(w_ja_path) and os.path.exists(w_dn_path):
-            W_ja = np.load(w_ja_path)
-            W_dn = np.load(w_dn_path)
-            self.W_jon_ammc_left = W_ja
-            self.W_jon_ammc_right = W_ja.copy()
-            self.W_ammc_dn = W_dn
-            self.is_from_file = True
-        else:
-            # Fallback procedural generation
-            rng = np.random.RandomState(42)
-            W_ja = np.zeros((self.n_ammc, self.n_jon))
-            for i in range(self.n_ammc):
-                center = (i / self.n_ammc) * self.n_jon
-                dists = np.abs(np.arange(self.n_jon) - center)
-                weights = np.exp(-0.5 * (dists / 3.0) ** 2)
-                weights[weights < 0.2] = 0.0
-                W_ja[i, :] = weights * rng.uniform(0.8, 1.2, size=self.n_jon)
-            W_ja = W_ja / (np.sum(W_ja, axis=1, keepdims=True) + 1e-6) * 1.5
-            self.W_jon_ammc_left = W_ja
-            self.W_jon_ammc_right = W_ja.copy()
-
-            W_adn = np.zeros((self.n_dns, 2 * self.n_ammc))
-            for d in range(8):
-                W_adn[d, :self.n_ammc // 2] = rng.uniform(0.5, 1.0, size=self.n_ammc // 2)
-                W_adn[d, self.n_ammc:self.n_ammc + self.n_ammc // 2] = rng.uniform(0.5, 1.0, size=self.n_ammc // 2)
-            for d in range(8, 16):
-                W_adn[d, :] = rng.uniform(0.2, 0.6, size=2 * self.n_ammc)
-            for d in range(16, 24):
-                sign = 1.0 if d % 2 == 0 else -1.0
-                W_adn[d, :self.n_ammc] = sign * rng.uniform(0.4, 0.8, size=self.n_ammc)
-                W_adn[d, self.n_ammc:] = -sign * rng.uniform(0.4, 0.8, size=self.n_ammc)
-            self.W_ammc_dn = W_adn * 1.2
+        """Loads verified FlyWire matrices from disk, builds them procedurally, or accepts custom ablation matrices."""
+        if self.custom_W_jon_ammc is not None and self.custom_W_ammc_dn is not None:
+            self.W_jon_ammc_left = self.custom_W_jon_ammc.copy()
+            self.W_jon_ammc_right = self.custom_W_jon_ammc.copy()
+            self.W_ammc_dn = self.custom_W_ammc_dn.copy()
             self.is_from_file = False
+        else:
+            w_ja_path = os.path.join(self.data_dir, "W_jon_ammc.npy")
+            w_dn_path = os.path.join(self.data_dir, "W_ammc_dn.npy")
+
+            if os.path.exists(w_ja_path) and os.path.exists(w_dn_path):
+                W_ja = np.load(w_ja_path)
+                W_dn = np.load(w_dn_path)
+                self.W_jon_ammc_left = W_ja
+                self.W_jon_ammc_right = W_ja.copy()
+                self.W_ammc_dn = W_dn
+                self.is_from_file = True
+            else:
+                # Fallback procedural generation
+                rng = np.random.RandomState(42)
+                W_ja = np.zeros((self.n_ammc, self.n_jon))
+                for i in range(self.n_ammc):
+                    center = (i / self.n_ammc) * self.n_jon
+                    dists = np.abs(np.arange(self.n_jon) - center)
+                    weights = np.exp(-0.5 * (dists / 3.0) ** 2)
+                    weights[weights < 0.2] = 0.0
+                    W_ja[i, :] = weights * rng.uniform(0.8, 1.2, size=self.n_jon)
+                W_ja = W_ja / (np.sum(W_ja, axis=1, keepdims=True) + 1e-6) * 1.5
+                self.W_jon_ammc_left = W_ja
+                self.W_jon_ammc_right = W_ja.copy()
+
+                W_adn = np.zeros((self.n_dns, 2 * self.n_ammc))
+                for d in range(8):
+                    W_adn[d, :self.n_ammc // 2] = rng.uniform(0.5, 1.0, size=self.n_ammc // 2)
+                    W_adn[d, self.n_ammc:self.n_ammc + self.n_ammc // 2] = rng.uniform(0.5, 1.0, size=self.n_ammc // 2)
+                for d in range(8, 16):
+                    W_adn[d, :] = rng.uniform(0.2, 0.6, size=2 * self.n_ammc)
+                for d in range(16, 24):
+                    sign = 1.0 if d % 2 == 0 else -1.0
+                    W_adn[d, :self.n_ammc] = sign * rng.uniform(0.4, 0.8, size=self.n_ammc)
+                    W_adn[d, self.n_ammc:] = -sign * rng.uniform(0.4, 0.8, size=self.n_ammc)
+                self.W_ammc_dn = W_adn * 1.2
+                self.is_from_file = False
 
         # Recurrent & lateral inhibition within AMMC
         rng = np.random.RandomState(42)

@@ -12,7 +12,7 @@ import numpy as np
 import torch
 
 from dance_gym_env import DrosophilaDanceGymEnv
-from ppo_model import ActorCritic
+from ppo.agent import PPOAgent
 
 
 def evaluate_policy(
@@ -31,12 +31,11 @@ def evaluate_policy(
     obs_dim = env.observation_space.shape[0]
     action_dim = env.action_space.shape[0]
 
-    agent = ActorCritic(obs_dim=obs_dim, action_dim=action_dim).to(device)
+    agent = PPOAgent(obs_dim=obs_dim, action_dim=action_dim).to(device)
 
     if os.path.exists(model_path):
-        checkpoint = torch.load(model_path, map_location=device)
-        agent.load_state_dict(checkpoint["model_state_dict"])
-        print(f"Loaded trained policy from checkpoint (Step: {checkpoint.get('global_step', 'N/A')})")
+        agent.load_checkpoint(model_path, map_location=device)
+        print(f"Loaded trained policy from checkpoint: {model_path}")
     else:
         print(f"Warning: Checkpoint not found at {model_path}. Using initial policy weights.")
 

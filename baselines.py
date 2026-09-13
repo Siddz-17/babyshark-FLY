@@ -16,7 +16,7 @@ from cpg_controller import CPGModulation
 from audio_pipeline import AudioFrame
 from connectome_auditory import DrosophilaAuditoryCircuit, NeuralState
 from fly_env import ProprioceptionState
-from ppo_model import ActorCritic
+from ppo.agent import PPOAgent
 
 
 class BaselineA_AutonomousCPG:
@@ -148,10 +148,9 @@ class BaselineE_TrainedPPO:
     def __init__(self, checkpoint_path: str = "checkpoints/best_dance_policy.pt", dt: float = 0.002):
         self.circuit = DrosophilaAuditoryCircuit(dt=dt, mode="biological")
         self.device = torch.device("cpu")
-        self.agent = ActorCritic(obs_dim=83, action_dim=8).to(self.device)
+        self.agent = PPOAgent(obs_dim=83, action_dim=8).to(self.device)
         if os.path.exists(checkpoint_path):
-            ckpt = torch.load(checkpoint_path, map_location=self.device)
-            self.agent.load_state_dict(ckpt["model_state_dict"])
+            self.agent.load_checkpoint(checkpoint_path, map_location=self.device)
             self.agent.eval()
 
     def reset(self):

@@ -37,6 +37,8 @@ class DrosophilaDanceGymEnv(gym.Env):
         randomize_tempo: bool = True,     # Randomize BPM on reset for robust policy learning
         backend: str = "simple",          # 'simple' or 'mujoco'
         connectome_mode: str = "biological",  # 'biological' or 'engineered'
+        blind_to_tempo: bool = True,      # Strict scientific mode: NO beat_phase, NO beat_pulse, NO BPM given to CPG
+        custom_circuit: Optional[DrosophilaAuditoryCircuit] = None,
         render_mode: Optional[str] = None,
     ):
         super().__init__()
@@ -46,6 +48,7 @@ class DrosophilaDanceGymEnv(gym.Env):
         self.randomize_tempo = randomize_tempo
         self.backend = backend
         self.connectome_mode = connectome_mode
+        self.blind_to_tempo = blind_to_tempo
         self.render_mode = render_mode
 
         self.max_steps = int(self.max_duration / self.dt)
@@ -62,9 +65,10 @@ class DrosophilaDanceGymEnv(gym.Env):
         )
 
         # Internal subsystems
-        self.cpg = DrosophilaCPG(dt=self.dt, default_freq=self.default_bpm / 60.0)
+        init_freq = 2.0 if self.blind_to_tempo else (self.default_bpm / 60.0)
+        self.cpg = DrosophilaCPG(dt=self.dt, default_freq=init_freq)
         self.fly_env = DrosophilaFlyEnv(backend=self.backend, dt=self.dt, enable_rendering=(render_mode == "rgb_array"))
-        self.circuit = DrosophilaAuditoryCircuit(dt=self.dt, mode=self.connectome_mode)
+        self.circuit = custom_circuit if custom_circuit is not None else DrosophilaAuditoryCircuit(dt=self.dt, mode=self.connectome_mode)
         self.reward_engine = DanceRewardEngine(nominal_com_height=1.25)
         self.audio_pipeline: Optional[AudioRhythmPipeline] = None
 
@@ -73,13 +77,24 @@ class DrosophilaDanceGymEnv(gym.Env):
 
     def _get_obs(self, audio_frame: AudioFrame, proprio: ProprioceptionState, neural: NeuralState) -> np.ndarray:
         """Constructs the combined 83-dimensional observation vector."""
-        audio_features = np.array([
-            audio_frame.beat_phase / (2.0 * np.pi),
-            audio_frame.beat_pulse,
-            audio_frame.onset_strength,
-            audio_frame.low_band_energy,
-            audio_frame.tempo_bpm / 120.0,
-        ], dtype=np.float32)
+        if self.blind_to_tempo:
+            # Strictly raw sensory acoustics: NO beat phase, NO beat pulse, NO BPM
+            audio_features = np.array([
+                audio_frame.raw_amplitude,
+                audio_frame.onset_strength,
+                audio_frame.low_band_energy,
+                audio_frame.mid_band_energy,
+                audio_frame.high_band_energy,
+            ], dtype=np.float32)
+        else:
+            # Privileged beat information (for engineered baseline comparisons)
+            audio_features = np.array([
+                audio_frame.beat_phase / (2.0 * np.pi),
+                audio_frame.beat_pulse,
+                audio_frame.onset_strength,
+                audio_frame.low_band_energy,
+                audio_frame.tempo_bpm / 120.0,
+            ], dtype=np.float32)
 
         proprio_vec = proprio.vector.astype(np.float32)
         dn_vec = neural.dn_activity.astype(np.float32)
@@ -151,13 +166,20 @@ class DrosophilaDanceGymEnv(gym.Env):
         dn_sustained = float(np.mean(neural_state.dn_activity[8:16]))
         dn_asymmetry = float(np.mean(neural_state.dn_activity[16:20]) - np.mean(neural_state.dn_activity[20:24]))
 
-        base_freq = (self.current_bpm / 60.0) * (0.85 + 0.35 * dn_transient)
+        act = np.clip(action, -1.0, 1.0)
+
+        if self.blind_to_tempo:
+            # Baseline stepping frequency is neutral 2.0 Hz. Policy must learn to modulate frequency up/down to match music rhythm
+            base_freq = 2.0 * (0.85 + 0.35 * dn_transient)
+            freq_mod = act[0] * 1.5
+        else:
+            base_freq = (self.current_bpm / 60.0) * (0.85 + 0.35 * dn_transient)
+            freq_mod = act[0] * 0.8
+
         base_amp = 0.9 + 0.5 * dn_sustained
         base_bob = 0.3 + 0.6 * dn_transient
         base_lr = dn_asymmetry * 0.2
 
-        act = np.clip(action, -1.0, 1.0)
-        freq_mod = act[0] * 0.8
         amp_mod = act[1] * 0.4
         bob_mod = act[2] * 0.4
         lr_mod = act[3] * 0.3

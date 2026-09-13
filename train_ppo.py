@@ -13,7 +13,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from dance_gym_env import DrosophilaDanceGymEnv
-from ppo_model import ActorCritic
+from ppo.agent import PPOAgent
 
 
 def train_ppo(
@@ -47,7 +47,7 @@ def train_ppo(
     action_dim = envs[0].action_space.shape[0]
 
     # Initialize ActorCritic policy network
-    agent = ActorCritic(obs_dim=obs_dim, action_dim=action_dim, hidden_dim=128).to(device)
+    agent = PPOAgent(obs_dim=obs_dim, action_dim=action_dim, hidden_dim=128).to(device)
     optimizer = optim.Adam(agent.parameters(), lr=learning_rate, eps=1e-5)
 
     # Storage buffers

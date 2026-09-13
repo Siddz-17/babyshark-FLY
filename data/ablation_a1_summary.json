@@ -1,0 +1,26 @@
+{
+  "1. Biological Connectome + PPO": {
+    "mean_reward": 6411.740597188145,
+    "std_reward": 202.52143550224935,
+    "mean_footfall_sync": 0.07639133444162721,
+    "std_footfall_sync": 0.007243800739820678,
+    "mean_stability": 1.7999704244065848,
+    "mean_energy": 0.47511487402532354
+  },
+  "2. Degree-Preserving Rewired + PPO": {
+    "mean_reward": 6984.470016922249,
+    "std_reward": 79.55582277535775,
+    "mean_footfall_sync": 0.3089696543383176,
+    "std_footfall_sync": 0.04012557418603904,
+    "mean_stability": 1.799970299204973,
+    "mean_energy": 0.35727593301481253
+  },
+  "3. Direct MLP + PPO": {
+    "mean_reward": 6581.251961511144,
+    "std_reward": 143.72708484865737,
+    "mean_footfall_sync": 0.06792674476238693,
+    "std_footfall_sync": 0.022778411157191147,
+    "mean_stability": 1.799970593995574,
+    "mean_energy": 0.3614553009566606
+  }
+}
