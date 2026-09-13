@@ -1,0 +1,26 @@
+[
+  {
+    "track": "Drosophila Courtship Song",
+    "mean_reward": 4.46102728671627,
+    "mean_sync": 0.02171055810002589,
+    "mean_stability": 1.7999203875182717,
+    "mean_energy": 0.43772940731540405,
+    "mean_velocity": -0.0037041380723367105
+  },
+  {
+    "track": "Syncopated Funk Groove",
+    "mean_reward": 4.615451070698697,
+    "mean_sync": 0.32102641356397205,
+    "mean_stability": 1.7999216226465826,
+    "mean_energy": 0.2778671790556855,
+    "mean_velocity": -0.0035825801985751426
+  },
+  {
+    "track": "Accelerando Dynamic Rhythm",
+    "mean_reward": 4.297721630685375,
+    "mean_sync": 0.023672422241394837,
+    "mean_stability": 1.7999246480313669,
+    "mean_energy": 0.22737760585142555,
+    "mean_velocity": -0.0036058117477647486
+  }
+]
